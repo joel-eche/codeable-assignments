@@ -1,0 +1,14 @@
+declare variable height, were we will save the user's input
+set the value of height to 0
+DO
+  ask for a integer number to assign to height
+WHILE user put a number less than 1 or greater than 8
+
+LOOP many times as the value of height, one by one, using i variable(to print a scape caracter)
+  LOOP many times as the value of height, one by one, using j variable (to print each character in a row)
+    if the value of i(row) is less or equals to the difference between height and j
+      print a space
+    else
+      print a #
+  print a enter
+
