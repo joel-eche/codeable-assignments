@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-style: normal;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Libre Franklin', sans-serif;
+    background: #000000;
+    color: white
+}
+
+.navbar-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+
+.navbar-company .brand{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar-company ul{
+    display: flex;
+    list-style: none;
+    padding-left: 0px;
+}
+
+.navbar-company ul li{
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+.navbar-search i {
+    color: black;
+    margin: -20px;
+    z-index: 20;
+}
+
+.navbar-search input {
+    height: 30px;
+    background: #FFFFFF;
+    padding-left: 25px;
+    border: none;
+    border-radius: 10px;
+}
+
+.user-option {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.language{
+    text-transform: uppercase;
+}
+
+.primary-button{
+    height: 35px;
+    border: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    background: #FFFFFF;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    font-family: 'Overpass', sans-serif;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    max-width: 266px;
+}
+
+.card .card-number {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -1.27273px;
+    color: #0AD9C6;
+}
+
+.card .card-title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+    color: #000000;
+}
+
+.card .card-body {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7A7A7A;
+}
