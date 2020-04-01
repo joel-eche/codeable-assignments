@@ -1,0 +1,243 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Overpass', sans-serif;
+    font-style: normal;
+}
+
+.content {
+    padding: 60px 150px;
+}
+
+.flex {
+    display: flex;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.grid {
+    display: grid;
+}
+
+.two-columns {
+    grid-template-columns: repeat(2, 1fr);
+}
+.three-columns {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.absolute {
+    position: absolute;
+}
+.h-100-percent {
+    height: 100%;
+}
+.w-50-percent {
+    width: 50%;
+}
+.w-100-percent {
+    width: 100%;
+}
+
+.services-section {
+    margin-bottom: 140px;
+}
+.services-descr {
+    padding: 0px 75px 0px 0px;
+}
+.services-descr-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -1px;
+    color: #000000;
+}
+.services-descr-description {
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 31px;
+    color: #666666;
+}
+.services-cards {
+    column-gap: 75px;
+    row-gap: 62px;
+}
+.services-card i {
+    padding: 20px;
+    font-size: 21px;
+    border-radius: 50%;
+    color: white;
+    background: #0AD1BD;
+}
+.services-card-title {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+    color: #000000;
+}
+.services-card-description {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7A7A7A;
+}
+
+.features-section {
+    column-gap: 105px;
+}
+.features-title {
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 64px;
+    letter-spacing: -1.5px;
+    color: #000000;
+}
+.feature {
+    margin-bottom: 50px;
+}
+.feature-icon {
+    margin-right: 24px;
+}
+.feature-title {
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: #000000;
+}
+.feature-description {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7A7A7A;
+}
+
+/*desktop*/
+@media only screen and (min-width: 1440px) {
+    .col-lg-3 {
+        grid-column-end: span 3;
+    }
+    .col-lg-2 {
+        grid-column-end: span 2;
+    }
+    .col-lg-1 {
+        grid-column-end: span 1;
+    }    
+}
+
+/*tablet*/
+@media only screen and (min-width: 769px) and (max-width: 1439px) {
+    .content {
+        padding: 25px;
+    }
+    
+    .col-md-3 {
+        grid-column-end: span 3;
+    }
+    .col-md-2 {
+        grid-column-end: span 2;
+    }
+    .col-md-1 {
+        grid-column-end: span 1;
+    }
+
+    .services-section {
+        margin-bottom: 55px;
+    }
+    .services-descr {
+        padding: 0px 48px 0px 0px;
+    }
+    .services-descr-title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .services-cards {
+        column-gap: 7px;
+        row-gap: 34px;
+    }
+    .services-card-title {
+        font-size: 18px;
+    }
+    
+    .features-section {
+        column-gap: 20px;
+    }
+    .features-title {
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .feature {
+        margin-bottom: 0px;
+    }
+    .feature-icon {
+        margin-right: 18px;
+    }
+}
+
+/*phone*/
+@media only screen and (max-width: 768px) {
+    .content {
+        text-align: center;
+        padding: 22px;
+    }
+
+    .col-sm-3 {
+        grid-column-end: span 3;
+    }
+    .col-sm-2 {
+        grid-column-end: span 2;
+    }
+    .col-sm-1 {
+        grid-column-end: span 1;
+    }
+
+    .services-section {
+        margin-bottom: 30px;
+    }
+    .services-descr {
+        padding: 0px;
+    }
+    .services-descr-title {
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .services-cards {
+        column-gap: 0px;
+        row-gap: 0px;
+    }
+    .services-card-title {
+        font-size: 18px;
+    }
+
+    .features-section{
+        grid-template-areas: 
+        "first-area first-area first-area"
+        "second-area second-area second-area";
+    }
+    .features-title {
+        font-size: 36px;
+        line-height: 36px;
+    }
+    .feature {
+        text-align: left;
+        margin-bottom: 0px;
+    }
+    .feature-icon {
+        margin-right: 16px;
+    }
+
+    .sm-first-area {
+        grid-area: first-area;
+    }
+    .sm-second-area {
+        grid-area: second-area;
+    }
+}
