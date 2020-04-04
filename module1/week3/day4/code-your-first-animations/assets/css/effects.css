@@ -1,0 +1,21 @@
+.spinner {
+    width: 86px;
+    height: 90px;
+    animation-name: spinner;
+    animation-timing-function: steps(1, end);
+    animation-iteration-count: infinite;
+    animation-duration: 1.2s;
+}
+
+/* keyframes */
+@keyframes spinner {
+    11.1111% {transform: rotate(40deg);}
+    22.2222% {transform: rotate(80deg);}
+    33.3333% {transform: rotate(120deg);}
+    44.4444% {transform: rotate(160deg);}
+    55.5555% {transform: rotate(200deg);}
+    66.6666% {transform: rotate(240deg);}
+    77.7777% {transform: rotate(280deg);}
+    88.8888% {transform: rotate(320deg);}
+    100% {transform: rotate(360deg);}
+}
